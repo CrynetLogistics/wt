@@ -1,0 +1,107 @@
+<html>
+<head>
+</head>
+<body>
+<p>dsjkfdjkf</p>
+<div id='pianoessence'>
+    <audio preload="auto" id="c" src="http://www.agnes-bruckner.com/apronus_static/music-lessons/sounds/c.mp3"></audio>
+    <audio preload="auto" id="cis" src="http://www.agnes-bruckner.com/apronus_static/music-lessons/sounds/cis.mp3"></audio>
+    <audio preload="auto" id="d" src="http://www.agnes-bruckner.com/apronus_static/music-lessons/sounds/d.mp3"></audio>
+    <audio preload="auto" id="es" src="http://www.agnes-bruckner.com/apronus_static/music-lessons/sounds/es.mp3"></audio>
+    <audio preload="auto" id="e" src="http://www.agnes-bruckner.com/apronus_static/music-lessons/sounds/e.mp3"></audio>
+    <audio preload="auto" id="f" src="http://www.agnes-bruckner.com/apronus_static/music-lessons/sounds/f.mp3"></audio>
+    <audio preload="auto" id="fis" src="http://www.agnes-bruckner.com/apronus_static/music-lessons/sounds/fis.mp3"></audio>
+    <audio preload="auto" id="g" src="http://www.agnes-bruckner.com/apronus_static/music-lessons/sounds/g.mp3"></audio>
+    <audio preload="auto" id="gis" src="http://www.agnes-bruckner.com/apronus_static/music-lessons/sounds/gis.mp3"></audio>
+    <audio preload="auto" id="a" src="http://www.agnes-bruckner.com/apronus_static/music-lessons/sounds/a.mp3"></audio>
+    <audio preload="auto" id="b" src="http://www.agnes-bruckner.com/apronus_static/music-lessons/sounds/b.mp3"></audio>
+    <audio preload="auto" id="h" src="http://www.agnes-bruckner.com/apronus_static/music-lessons/sounds/h.mp3"></audio>
+    <audio preload="auto" id="c1" src="http://www.agnes-bruckner.com/apronus_static/music-lessons/sounds/c1.mp3"></audio>
+    <audio preload="auto" id="cis1" src="http://www.agnes-bruckner.com/apronus_static/music-lessons/sounds/cis1.mp3"></audio>
+    <audio preload="auto" id="d1" src="http://www.agnes-bruckner.com/apronus_static/music-lessons/sounds/d1.mp3"></audio>
+    <audio preload="auto" id="es1" src="http://www.agnes-bruckner.com/apronus_static/music-lessons/sounds/es1.mp3"></audio>
+    <audio preload="auto" id="e1" src="http://www.agnes-bruckner.com/apronus_static/music-lessons/sounds/e1.mp3"></audio>
+    <audio preload="auto" id="f1" src="http://www.agnes-bruckner.com/apronus_static/music-lessons/sounds/f1.mp3"></audio>
+    <audio preload="auto" id="fis1" src="http://www.agnes-bruckner.com/apronus_static/music-lessons/sounds/fis1.mp3"></audio>
+    <audio preload="auto" id="g1" src="http://www.agnes-bruckner.com/apronus_static/music-lessons/sounds/g1.mp3"></audio>
+    <audio preload="auto" id="gis1" src="http://www.agnes-bruckner.com/apronus_static/music-lessons/sounds/gis1.mp3"></audio>
+    <audio preload="auto" id="a1" src="http://www.agnes-bruckner.com/apronus_static/music-lessons/sounds/a1.mp3"></audio>
+    <audio preload="auto" id="b1" src="http://www.agnes-bruckner.com/apronus_static/music-lessons/sounds/b1.mp3"></audio>
+    <audio preload="auto" id="h1" src="http://www.agnes-bruckner.com/apronus_static/music-lessons/sounds/h1.mp3"></audio>
+    <audio preload="auto" id="c2" src="http://www.agnes-bruckner.com/apronus_static/music-lessons/sounds/c2.mp3"></audio>
+</div>
+<script type="text/javascript">
+
+function mapping(ch) {
+    if (ch == 'q') return 1;
+	if (ch == 'w') return 2;
+	if (ch == 'e') return 3;
+	if (ch == 'r') return 4;
+	if (ch == 't') return 5;
+	if (ch == 'y') return 6;
+	if (ch == 'u') return 7;
+	if (ch == 'i') return 8;
+	if (ch == 'o') return 9;
+	if (ch == 'p') return 10;
+	if (ch == 'a') return 11;
+	if (ch == 's') return 12;
+	if (ch == 'd') return 13;
+	if (ch == 'f') return 14;
+	if (ch == 'g') return 15;
+	if (ch == 'h') return 16;
+	if (ch == 'j') return 17;
+	if (ch == 'k') return 18;
+	if (ch == 'l') return 19;
+	if (ch == 'z') return 20;
+	if (ch == 'x') return 21;
+	if (ch == 'c') return 22;
+	if (ch == 'v') return 23;
+	if (ch == 'b') return 24;
+	if (ch == 'n') return 25;
+}
+
+function playNote(x) {
+    var k;
+    if (x==1) k = document.getElementById('c');
+    if (x==2) k = document.getElementById('cis');
+    if (x==3) k = document.getElementById('d');
+    if (x==4) k = document.getElementById('es');
+    if (x==5) k = document.getElementById('e');
+    if (x==6) k = document.getElementById('f');
+    if (x==7) k = document.getElementById('fis');
+    if (x==8) k = document.getElementById('g');
+    if (x==9) k = document.getElementById('gis');
+    if (x==10) k = document.getElementById('a');
+    if (x==11) k = document.getElementById('b');
+    if (x==12) k = document.getElementById('h');
+
+    if (x==13) k = document.getElementById('c1');
+    if (x==14) k = document.getElementById('cis1');
+    if (x==15) k = document.getElementById('d1');
+    if (x==16) k = document.getElementById('es1');
+    if (x==17) k = document.getElementById('e1');
+    if (x==18) k = document.getElementById('f1');
+    if (x==19) k = document.getElementById('fis1');
+    if (x==20) k = document.getElementById('g1');
+    if (x==21) k = document.getElementById('gis1');
+    if (x==22) k = document.getElementById('a1');
+    if (x==23) k = document.getElementById('b1');
+    if (x==24) k = document.getElementById('h1');
+    if (x==25) k = document.getElementById('c2');
+
+    k.currentTime=0;
+    k.play(); 
+}
+
+
+document.onkeypress = function (e) {
+    e = e || window.event;
+    if (e.keyCode >= 97 || e.keyCode <= 122) {
+	    var ch ='abcdefghijklmnopqrstuvwxyz'.charAt(e.keyCode - 97);
+	    playNote(('0qwertyuiopasdfghjklzxcvbnm'.indexOf(ch)));
+	}
+};
+
+</script>
+</body>
+</html>
